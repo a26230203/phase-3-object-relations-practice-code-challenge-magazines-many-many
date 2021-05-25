@@ -28,7 +28,7 @@ class Magazine < ActiveRecord::Base
     #Approch 2
     # Magazine.all.max_by do |magazine|
     #   magazine.subscriptions.length
+    
     # end
   end
-
 end
