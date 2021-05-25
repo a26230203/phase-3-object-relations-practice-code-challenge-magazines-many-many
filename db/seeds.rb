@@ -25,9 +25,10 @@ puts "Seeding subscriptions..."
   # Get a random price between 10 and 100:
   price = rand(10..100)
 
-  # TODO: create subscriptions! Remember, a subscription belongs to a reader
-  # and a subscription belongs to a magazine.
-  
+  # TODO: create subscriptions! Remember, a subscription belongs to a read
+  Subscription.create(reader_id: reader_id, magazine_id: magazine_id, price: price)
+  # and a subscription !!!belongs to a magazine.
 end
+
 
 puts "Done!"
